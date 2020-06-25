@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Business Ideas</title>
+    <link rel="stylesheet" href="style_stock.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+</head>
+<script>
+    function preload(){
+        document.getElementById("stockOutput").innerHTML=localStorage.getItem("stock_id"); 
+        capital=Number(localStorage.getItem("capital")); 
+        balance=Number(localStorage.getItem("balance"));
+        returnAmt=Number(localStorage.getItem("returnAmt"));
+        investAmount=Number(localStorage.getItem("investAmount"));
+        document.getElementById("printCapital").innerHTML="INR "+balance;     
+        document.getElementById("capitalOutput").innerHTML="INR "+capital;
+        document.getElementById("investOutput").innerHTML= "INR "+investAmount;
+        document.getElementById("returnOutput").innerHTML="INR " + returnAmt; 
+        document.getElementById("balanceOutput").innerHTML="INR "+ balance;
+    }
+</script>
+<body class="container-fluid" onload="preload()">
+    <!--start navbar-->
+    <div class="nav-bar">
+        <div class="nav-flex-bar">
+            <div>
+                <img class="tec-logo" src="TEC_logo.png" alt="Tec-logo">
+            </div>
+            <h1><b>Business Ideas 2.0</b></h1>
+            <img class="business-ideas" src="Business Ideas Logo.png" alt= "businessidea-logo">
+            <div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="business_ideas.html#home">Home</a></li>
+                    <li class="nav-item"><a href="business_ideas.html#about">About</a></li>
+                    <li class="nav-item"><a href="business_ideas.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-capital">
+            <span>Available Balance:</span>
+            <span id="printCapital"></span>
+        </div>
+    </div>
+    <!--home-->
+    <div class="body-margin">
+        
+        <div class="output-box" ><br>
+            <div id="heading-font">
+                <span><b>You have successfuly sold</b></span>
+                <span id="stockOutput"></span>
+            </div>
+           
+            <hr style="height:0.5px;border-width:0;color: #189351 ;background-color:#189351;"><br>
+            <div class="two-col">
+                <p>Initial Capital:</p>
+                <p class="highlight" id="capitalOutput">INR 0</p>
+            </div>
+            <div class="two-col">
+                <p>Invested Amount:</p>
+                <p class="highlight" id="investOutput"> INR 0</p>
+            </div>
+            <div class="two-col">
+                <p>Return Amount:</p>
+                <p class="highlight" id="returnOutput"> INR 0</p>
+            </div>
+            <div class="two-col" id="balance-grid">
+                <p >Balance Amount:</p>
+                <p class="highlight" id="balanceOutput"> INR 0</p>
+            </div>
+            
+            <button class="button-2"><b>Return to main site</b></button>
+
+        </div>
+    </div>
+</body>

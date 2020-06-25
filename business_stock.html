@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <title>Business Ideas-2</title>
+    <link rel="stylesheet" href="style_stock.css">
+    <script type="text/javascript" src="jsfile.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+</head>
+
+<body class="container-fluid " onload="preLoad()">
+    <!--start navbar-->
+    <div class="nav-bar">
+        <div class="nav-flex-bar">
+            <div>
+                <img class="tec-logo" src="TEC_logo.png" alt="Tec-logo">
+            </div>
+            <h1><b>Business Ideas 2.0</b></h1>
+            <img class="business-ideas" src="Business Ideas Logo.png" alt= "businessidea-logo">
+            <div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="business_ideas.html#home">Home</a></li>
+                    <li class="nav-item"><a href="business_ideas.html#about">About</a></li>
+                    <li class="nav-item"><a href="business_ideas.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-capital">
+            <span>Available Balance:</span>
+            <span id="printCapital"></span>
+        </div>
+    </div>
+
+    <!--body-->
+    <div class="top-margin" onload="printCapital()">
+        <div class="select-stock">
+             <h1>Select stock</h1><hr class="hr">
+             <p>*please select only <b>one</b> stock from the list</p>
+             <p>This process cannot be reversed</p>
+             <p id="alertMsg"></p>
+        </div>
+    
+        <div class="stock-list" autocomplete="off" >
+            <div class="radio-item">
+                <input type="radio" id="stock1" name="stock" value="Stock 1" onclick="im('stock1');">
+                <label for="stock1">Stock 1</label>
+            </div>
+            
+            <div class="radio-item">
+                <input type="radio" id="stock2" name="stock" value="Stock 2" onclick="im('stock2');">
+                <label for="stock2">Stock 2</label>
+            </div>
+        
+            <div class="radio-item">
+                <input type="radio" id="stock3" name="stock" value="Stock 3" onclick="im('stock3');">
+                <label for="stock3">Stock 3</label>
+            </div>
+        
+            <div class="radio-item">
+                <input type="radio" id="stock4" name="stock" value="Stock 4" onclick="im('stock4');">
+                <label for="stock4">Stock 4</label>
+            </div>
+        
+            <div class="radio-item">
+                <input type="radio" id="stock5" name="stock" value="Stock 5" onclick="im('stock5');">
+                <label for="stock5">Stock 5</label>
+            </div>
+    
+            <div class="radio-item">
+                <input type="radio" id="stock6" name="stock" value="Stock 6" onclick="im('stock6');">
+                <label for="stock6">Stock 6</label>
+            </div>
+        
+            <div class="radio-item">
+                <input type="radio" id="stock7" name="stock" value="Stock 7" onclick="im('stock7');">
+                <label for="stock7">Stock 7</label>
+            </div>
+        
+            <div class="radio-item">
+                <input type="radio" id="stock8" name="stock" value="Stock 8" onclick="im('stock8');">
+                <label for="stock8">Stock 8</label>
+            </div>
+        
+            <div class="radio-item">
+                <input type="radio" id="stock9" name="stock" value="Stock 9" onclick="im('stock9');">
+                <label for="stock9">Stock 9</label>
+            </div>
+        
+            <div class="radio-item">
+                <input type="radio" id="stock10" name="stock" value="Stock 10" onclick="im('stock10');">
+                <label for="stock10">Stock 10</label>
+            </div>       
+        </div>
+        <div class="right-col" >
+            <div class="stock-img">
+                <img id="a" src="graph_1.png">
+            </div> 
+        </div>
+        
+        <div class="stock-end" >
+            <button onclick="confirmStock()"><b>Confirm stock</b></button>
+        </div>  
+    
+    </div>
+
+</body>

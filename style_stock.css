@@ -1,0 +1,292 @@
+/*BUSINESS_STOCK*/
+html{
+    scroll-behavior: smooth;
+}
+.container-fluid{
+    background-image: url('C:/Users/Shvetha M Nambiar/Desktop/TEC/WEBDEV/BI/wp2128226.svg');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    padding-top: 5px;
+}
+/*navigation*/
+.nav-bar{
+    left: 0px;
+    top:0px;
+    width: 100%;
+    position: fixed;
+    padding: 2vh 2vw;
+    z-index: 2;
+}
+.nav-flex-bar{
+    color: white;
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: space-between;  
+}
+.tec-logo{
+    width: 100px;
+    height: auto;
+}
+
+.nav-list{
+    margin-right: 1em;
+    padding-top: 1em;
+}
+.nav-item{
+    display: inline-block !important;
+    padding-right: 5px;
+}
+.nav-bar .nav-list .nav-item a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: solid 2px transparent;
+    transition: ease-in 0.3s;
+}
+.nav-bar .nav-list .nav-item a:hover{
+    border-bottom: #189351 solid 2px;
+    font-size: 21px;
+}
+.nav-bar h1{
+    color: #189351;
+    font-size: 30px;
+    margin-top: -0.5vh;
+    text-shadow: #000000b9 3px 3px 20px;
+}
+.business-ideas{
+    width: 90px;
+}
+
+.nav-capital{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border:0.5px solid #F8D229;
+    display: inline-block;
+    padding:2px 5px;
+    margin-top: -8px !important;
+    margin-left: 80% !important;
+}
+#printCapital{
+    color: red;
+}
+/*body*/
+.top-margin{
+    margin-top:10em;
+}
+#alertMsg{
+    color: red;
+    text-shadow: rgb(75, 75, 75) 1px 2px 3px;
+    margin-left: 2vw;
+    font-size: 15px;
+}
+.select-stock{
+    color: white;
+    margin-left: 10vw;
+}
+
+.select-stock p{
+    color: red !important; 
+    font-size: 10px;
+}
+.hr{
+    border:#189351 solid 1px;
+    width: 230px;
+    margin-left: -2vh;
+    margin-top: -0.5vh;
+}
+/*radio button*/
+.stock-list{
+    margin-left: 12vw;
+}
+.radio-item {
+    display:block;
+    position: relative;
+    padding: 0 20px;
+    margin: 5px 0 0;
+  }
+  .radio-item input[type='radio'] {
+    display: none;
+  }
+  
+  .radio-item label {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+  }
+  
+  .radio-item label:before {
+    content: " ";
+    display:inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #F8D229;
+    background-color: transparent;
+  }
+  .radio-item input[type=radio]:hover + label:after {
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 9.55px;
+    left:24.5px;
+    content: " ";
+    display: block;
+    background: rgba(212, 181, 41, 0.603);
+    transition: ease-in 1s;
+  }
+  .radio-item input[type=radio]:checked + label:after {
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 9.55px;
+    left:24.5px;
+    content: " ";
+    display: block;
+    background: #F8D229;
+    transition: ease-in 0.2s;
+  }
+  /*image*/
+  .right-col{
+    margin-left: 50%;
+}
+.stock-img{
+    position: absolute;
+    top: 25vh;
+    left: 50vw;
+}
+.stock-img img{
+    width: 40vw;
+    height: 40vw;
+}
+
+/*button*/
+button{
+    background-color: #F8D229;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 25px !important;
+    margin-top: 2vh !important;
+    margin-left: 10vw !important;
+    border: none;
+    box-shadow:  rgb(122, 102, 13) 3px 3px 10px;
+    transition: ease-in 0.2s;
+}
+button:hover{
+    background-color:rgb(179, 151, 29);
+    padding: 7px 19px;
+    font-size: 23px;
+}
+
+
+
+/*---BUSINESS-SELL---*/
+.body-margin{
+    margin-top: 25vh;
+}
+#stockOutput{
+    color: #0037F1;
+}
+.sec-1{
+    color: white;
+    margin: 0vh 25%;
+    background-color: rgb(0, 0, 0);
+    padding: 3vh 3vw;
+    border-radius: 10px; 
+}
+.invest-box{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stock-img{
+    height: 20vw;
+    text-align: center;
+  
+}
+.stock-image img{
+    width: 20vw;
+    height: 20vw;
+    
+}
+.sec-1 span{
+    font-size: 20px;
+}
+.enter-amt{
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-box{
+    padding:10px 30px 10px 10px;
+    margin:0px 1vw;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    color: black;
+    box-shadow: black 3px 3px 3px;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+.button-2{
+    background-color: #F8D229;
+    padding: 5px 15px !important;
+    border-radius: 10px;
+    font-size: 18px !important;
+    color: black ;
+    margin-top: 3vh !important;
+    margin-left: 15vw !important;
+    border: none;
+    box-shadow:  rgb(122, 102, 13) 3px 3px 10px;
+    width:17vw;
+    transition: ease-in 0.2s;
+}
+.button-2:hover{
+    background-color:rgb(179, 151, 29);
+    padding: 7px 19px;
+    font-size: 23px;
+}
+
+.output-box{
+    color: white;
+    margin:0vh 25%;
+    background-color: black;
+    padding: 1vh 3vw 5vh 3vw !important;
+    border-radius: 10px;
+}
+
+#mins, #secs {
+    color: red;
+}
+.two-col{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    border-bottom: rgb(112, 111, 111) 1px solid;
+    padding-left: 2vw;
+}
+.two-col p{
+    font-size: 15px;
+}
+.highlight{
+    color: #0037F1;
+    
+}
+
+/* -- BUSINESS END-- */
+#heading-font{
+    font-size: 23px;
+}
+#balance-grid p{
+    font-size: 18px;
+}

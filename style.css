@@ -1,0 +1,223 @@
+html{
+    scroll-behavior: smooth;
+}
+.container-fluid{
+    background-image: url('wp2128226.svg');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    padding-top: 5px;
+    background-color: black;
+}
+/*navigation*/
+.nav-bar{
+    
+    left: 0px;
+    top:0px;
+    width: 100%;
+    position: fixed;
+    padding: 2vh 2vw;
+    z-index: 2;
+}
+.nav-flex-bar{
+    color: white;
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: space-between;  
+}
+.tec-logo{
+    width: 100px;
+    height: auto;
+}
+
+.nav-list{
+    margin-right: 1em;
+    padding-top: 1em;
+}
+.nav-item{
+    display: inline-block !important;
+    padding-right: 5px;
+}
+.nav-bar .nav-list .nav-item a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: solid 2px transparent;
+    transition: ease-in 0.3s;
+}
+.nav-bar .nav-list .nav-item a:hover{
+    border-bottom: #189351 solid 2px;
+    font-size: 21px;
+}
+
+.nav-capital{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border:0.5px solid #F8D229;
+    width: 16vw;
+    padding:2px 5px;
+    margin-top: -8px !important;
+    margin-left: 80% !important;
+}
+#printCapital{
+    color: red;
+}
+/*top margin*/
+.top-margin{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* home */
+.home{
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+    align-items: center;
+}
+@media screen and (min-width: 400px) {
+   .home{
+       display: flex;
+       flex-direction: row-reverse;
+       justify-content: center;
+       align-items: center;
+   }
+   .index{
+        margin-top: -15vh;
+   }
+   .about{
+       margin-top: 5vh;
+       padding-bottom: 5vh;
+   }
+   
+}
+.businessidea-logo {
+    width: 350px;   
+}
+.bi-logo{
+    padding-top: 7em;
+    margin-left: 0px;
+}
+
+.index{
+    padding-top: 8em;
+    text-align: center;
+}
+.index h1{
+    color: white;
+    padding-bottom: 5px;
+    font-size: 45px;
+}
+.index h1:after {
+    content: ""; 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 100%; 
+    padding-top: 8px; /* This creates some space between the element and the border. */
+    border-bottom: 2px solid #189351;
+}
+.index h3{
+    color: white;
+}
+button{
+    background-color: #F8D229;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 30px !important;
+    margin-top: 15px !important;
+    border: none;
+    box-shadow:  rgb(122, 102, 13) 3px 3px 10px;
+    transition: ease-in 0.2s;
+}
+button:hover{
+    background-color:rgb(179, 151, 29);
+    padding: 9px 19px;
+    font-size: 31px;
+
+}
+
+/*about*/
+.about{
+    padding: 10vh 0vh;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;       
+    justify-content: space-around;
+    align-items: center;
+}
+.hr{
+    border:#189351 solid 1px;
+    width: 70%;
+}
+.about-img{
+    width:400px !important;
+    float: left;
+    padding-bottom: 2vh;
+}
+.about-info{
+    padding: 20px 60px 10px 60px !important;
+    border-radius: 10px;
+    width: 600px !important;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.377);   
+}
+.about-info p{
+    font-size: 15px;
+    color: rgb(179, 176, 176);
+}
+
+/*footer*/
+footer{
+    margin-top: 10vh;
+    color: white;
+    padding: 15vh 8vw 25vh 9vw;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.footer-container a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    transition: ease-in 0.2s;
+}
+.footer-container a:hover{
+    text-decoration: none;
+    color:rgb(224, 224, 224);
+    font-size: medium;
+}
+.contact{
+        
+    display: flex;
+    align-items: center;
+}
+.footer-img{
+    width:  45px;
+    padding-right: 1vw;
+}
+.footer p{
+    font-size: 15px;
+}
+
+
+/*BUSINESS_STOCK*/
+.nav-bar h2{
+    font-size: 30px;
+}
+.select-stock{
+    font-size: ;
+    color: white;
+}

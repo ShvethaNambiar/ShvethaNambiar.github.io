@@ -1,0 +1,328 @@
+html{
+    scroll-behavior: smooth;
+}
+.container-fluid{
+    background-image: url('C:/Users/Shvetha M Nambiar/Desktop/TEC/WEBDEV/BI/wp2128226.svg');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    padding-top: 5px;
+}
+/*navigation*/
+.nav-bar{
+    
+    left: 0px;
+    top:0px;
+    width: 100%;
+    position: fixed;
+    padding: 2vh 2vw;
+    z-index: 2;
+}
+.nav-flex-bar{
+    color: white;
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: space-between;  
+}
+.tec-logo{
+    width: 100px;
+    height: auto;
+}
+
+.nav-list{
+    margin-right: 1em;
+    padding-top: 1em;
+}
+.nav-item{
+    display: inline-block !important;
+    padding-right: 5px;
+}
+.nav-bar .nav-list .nav-item a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: solid 2px transparent;
+    transition: ease-in 0.3s;
+}
+.nav-bar .nav-list .nav-item a:hover{
+    border-bottom: #189351 solid 2px;
+    font-size: 21px;
+}
+
+.nav-capital{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border:0.5px solid #F8D229;
+    width: 16vw;
+    padding:2px 5px;
+    margin-top: -8px !important;
+    margin-left: 80% !important;
+}
+#printCapital{
+    color: red;
+}
+/*top margin*/
+.top-margin{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* home */
+.home{
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+    align-items: center;
+}
+@media screen and (min-width: 400px) {
+   .home{
+       display: flex;
+       flex-direction: row-reverse;
+       justify-content: center;
+       align-items: center;
+   }
+   .index{
+        margin-top: -15vh;
+   }
+   .about{
+       margin-top: 5vh;
+       padding-bottom: 5vh;
+   }
+   
+}
+.businessidea-logo {
+    width: 350px;   
+}
+.bi-logo{
+    padding-top: 7em;
+    margin-left: 0px;
+}
+
+.index{
+    padding-top: 8em;
+    text-align: center;
+}
+.index h1{
+    color: white;
+    padding-bottom: 5px;
+    font-size: 45px;
+}
+.index h1:after {
+    content: ""; 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 100%; 
+    padding-top: 8px; /* This creates some space between the element and the border. */
+    border-bottom: 2px solid #189351;
+}
+.index h3{
+    color: white;
+}
+button{
+    background-color: #F8D229;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 30px !important;
+    margin-top: 15px !important;
+    border: none;
+    box-shadow:  rgb(122, 102, 13) 3px 3px 10px;
+    transition: ease-in 0.2s;
+}
+button:hover{
+    background-color:rgb(179, 151, 29);
+    padding: 9px 19px;
+    font-size: 31px;
+
+}
+
+/*about*/
+.about{
+    padding: 10vh 0vh;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;       
+    justify-content: space-around;
+    align-items: center;
+}
+.hr{
+    border:#189351 solid 1px;
+    width: 70%;
+}
+.about-img{
+    width:400px !important;
+    float: left;
+    padding-bottom: 2vh;
+}
+.about-info{
+    padding: 20px 60px 10px 60px !important;
+    border-radius: 10px;
+    width: 600px !important;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.377);   
+}
+.about-info p{
+    font-size: 15px;
+    color: rgb(179, 176, 176);
+}
+
+/*footer*/
+footer{
+    margin-top: 10vh;
+    color: white;
+    padding: 15vh 8vw 25vh 9vw;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.footer-container a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    transition: ease-in 0.2s;
+}
+.footer-container a:hover{
+    text-decoration: none;
+    color:rgb(224, 224, 224);
+    font-size: medium;
+}
+.contact{
+        
+    display: flex;
+    align-items: center;
+}
+.footer-img{
+    width:  45px;
+    padding-right: 1vw;
+}
+.footer p{
+    font-size: 15px;
+}
+
+
+/*BUSINESS_STOCK*/
+.nav-bar h2{
+    font-size: 30px;
+}
+.select-stock{
+    font-size: ;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<head>
+    <title>Business Ideas</title>
+    <link rel="stylesheet" href="jquery.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+</head>
+<script>
+ /*   function getCapital(){
+        window.localStorage.clear();
+        var capital = prompt("Please enter capital amt", "Enter amount");
+        if (capital >=0) {
+            localStorage.setItem("capital",capital);
+        }
+        else{
+            localStorage.setItem("capital",0);
+        }
+        document.getElementById("printCapital").innerHTML="INR "+localStorage.getItem("capital");
+    }*/
+</script>
+
+<body onload="getCapital()"  class="container-fluid " >
+    <!--start navbar-->
+    <div class="nav-bar">
+        <div class="nav-flex-bar">
+            <div>
+                <img class="tec-logo" src="C:\Users\Shvetha M Nambiar\Desktop\TEC\WEBDEV\BI\TEC_logo.png" alt="Tec-logo">
+            </div>
+            <div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home">Home</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-capital">
+            <span>Available Balance:</span>
+            <span id="printCapital"></span>
+        </div>
+    </div>
+    
+
+    <div class="top-margin" id="home">
+         <!--home-->
+        <div class="home row">
+            <span class="bi-logo col-md-6"> 
+                <img class="businessidea-logo img-responsive" src="C:\Users\Shvetha M Nambiar\Desktop\TEC\photoshop_projects\Photoshop_tec\Business Ideas Logo.png" alt= "businessidea-logo">
+           </span>
+            <div class="index col-md-6">
+                <h1 >Business Ideas 2.0</h1><hr style="height:2px;border-width:0;width: 60%;background-color:#189351;">
+                <h3 class=""><b>S</b>olve it | <b>S</b>ell it | <b>W</b>in it</h3>
+                <button  onclick="window.location.href='file:///C:/Users/Shvetha%20M%20Nambiar/Desktop/TEC/WEBDEV/BI/business_stock.html';" target="_blank"><b>Start Investing</b></button>
+            </div>
+        </div>
+
+        <!--About-->
+        <div class="about row " id="about">
+            <div class="about-image col-md-5 ">
+                <img class="about-img " src="file:///C:/Users/Shvetha%20M%20Nambiar/Desktop/TEC/WEBDEV/BI/img.svg">
+            </div>
+            <div class="about-info col-md-7 ">
+                <h1><center>About us</center></h1> 
+                <hr class="hr"><br>
+                <p>TEC-The Electronics Club is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium numquam alias beatae nesciunt accusamus, debitis temporibus eius molestiae exercitationem dignissimos, quia nisi corporis iure consectetur? Iure temporibus veritatis accusamus iste.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis unde adipisci repudiandae quas voluptas quasi, reiciendis eaque blanditiis culpa quae? Libero sit id repudiandae laboriosam accusantium, voluptatem impedit veniam iure. loew. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod officiis sapiente mollitia! Fugiat voluptas dolorum eligendi facilis est omnis recusandae quis ea ad, veritatis sequi consectetur, aliquam reiciendis vel.</p><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptas quas maiores quasi, at quibusdam possimus. Quas temporibus at iusto sint earum modi. Quaerat nihil quia sit nobis nisi deleniti.</p><br>
+            </div>
+        </div>
+        <!--footer-->
+        <footer id="contact">
+            <h1>About us</h1> 
+            <hr class="hr">
+            <br>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis necessitatibus sed consectetur consequatur impedit, ipsum, animi, delectus sunt deleniti sequi laudantium nostrum mollitia doloribus doloremque? Error sapiente dolores eos ducimus?</p>       
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, magnam adipisci! Iste, unde delectus doloremque ab dolorum, odit iure recusandae aperiam ipsam laboriosam quod. Corporis suscipit consequuntur temporibus ducimus sequi.</p>
+            <br>
+            <div class="footer-container">
+                <div class="contact" id="facebook">
+                    <img class="footer-img" src="C:\Users\Shvetha M Nambiar\Desktop\TEC\photoshop_projects\Photoshop_tec\facebook_white.svg"> 
+                    <a href="">Facebook</a> 
+                </div>
+                <div class="contact" id="instagram">
+                    <img class="footer-img" src="C:\Users\Shvetha M Nambiar\Desktop\TEC\photoshop_projects\Photoshop_tec\instagram_white.svg"> 
+                    <a href="">Instagram</a> 
+                </div>
+                <div class="contact" id="linkedin">
+                    <img class="footer-img" src="C:\Users\Shvetha M Nambiar\Desktop\TEC\photoshop_projects\Photoshop_tec\linkedin_white.svg"> 
+                    <a href="">Linkedin</a> 
+                </div>
+            </div>
+        </footer>
+    </div>
+   
+</body>
+
+
+
